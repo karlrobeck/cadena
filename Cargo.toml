@@ -5,5 +5,7 @@ edition = "2024"
 
 [dependencies]
 anyhow = "1.0.102"
-libp2p = {version = "0.56.0",features = ["tcp","tokio","noise","yamux"]}
+clap = { version = "4.6.1", features = ["derive"] }
+futures = "0.3.32"
+libp2p = {version = "0.56.0",features = ["tcp","tokio","noise","yamux","identify","gossipsub","kad","macros"]}
 tokio = { version = "1.52.1", features = ["full"] }
